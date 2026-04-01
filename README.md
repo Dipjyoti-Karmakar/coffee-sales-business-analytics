@@ -62,6 +62,24 @@ The notebook explores the following business questions:
 - Payment preference changes
 - Coffee-wise month-over-month sales comparison
 
+## Quantitative Findings (From Notebook Outputs)
+- Total analyzed transactions (combined): 3,898
+- Payment method split: Card 3,729 (95.66%), Cash 169 (4.34%)
+- Top 5 coffees by purchase count:
+    - Americano with Milk: 824
+    - Latte: 806
+    - Americano: 593
+    - Cappuccino: 517
+    - Cortado: 292
+- Top revenue coffee: Latte with total revenue of 28,658.3
+- Peak purchase hour: 18:00 with 113 transactions
+- Repeat-customer signal: 545 unique cards made more than one purchase
+- Highest repeat card activity: ANON-0000-0000-0012 with 129 purchases
+- Month comparison (source datasets):
+    - February total revenue: 115,431.58
+    - March total revenue: 6,890
+    - Revenue growth from February to March: -94.03%
+
 ## How to Run
 1.  **Clone the Repository:**
     ```bash
