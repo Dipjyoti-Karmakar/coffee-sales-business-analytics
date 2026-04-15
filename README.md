@@ -78,9 +78,10 @@ The notebook explores the following business questions:
 - Repeat-customer signal: 545 unique cards made more than one purchase
 - Highest repeat card activity: ANON-0000-0000-0012 with 129 purchases
 - Month comparison (source datasets):
-    - February total revenue: 115,431.58
-    - March total revenue: 6,890
-    - Revenue growth from February to March: -94.03%
+    - February 2025 total revenue: 16,804.48
+    - March 2025 total revenue: 13,287.44
+    - Revenue growth from February to March: -20.93%
+    - *Note: Figures corrected after fixing aggregation bug where the entire historical dataset was mistakenly treated as February data. Verified on April 15, 2026.*
 
 ## How to Run
 1.  **Clone the Repository:**
@@ -95,7 +96,11 @@ The notebook explores the following business questions:
     ```bash
     # Create and activate virtual environment
     python -m venv venv
-    source venv/Scripts/activate  # On Windows
+    
+    # On Windows (Command Prompt):
+    venv\Scripts\activate
+    # On Windows (PowerShell):
+    .\venv\Scripts\Activate.ps1
 
     # Install dependencies
     pip install pandas numpy matplotlib seaborn jupyter
