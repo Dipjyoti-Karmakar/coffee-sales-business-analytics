@@ -22,14 +22,16 @@ The analysis uses two datasets combined for a holistic view:
 * **`customer_details.csv`** - Additional customer transaction records with datetime, coffee name, payment type, and amount.
 
 ## Project Structure
+
 ```
-coffee-sales-business-analytics/
-├── coffee_sales_analytics/
-│   ├── coffee_sales_analytics.ipynb   # Main analysis notebook
-│   ├── transactions.csv               # February transactions
-│   └── customer_details.csv           # March/additional transactions
-├── README.md
-└── .gitignore
+root/
+├── data/
+│   └── raw/              ← Original, untouched source files (.csv, .xlsx, .json)
+├── notebooks/
+│   └── eda/              ← Exploratory data analysis (e.g., 01_coffee_sales_analytics.ipynb)
+├── .gitignore            ← Git ignore definitions
+├── requirements.txt      ← Python package dependencies
+└── README.md             ← Top-level documentation
 ```
 
 ## Tech Stack
@@ -89,12 +91,17 @@ The notebook explores the following business questions:
     # Or using SSH (for contributors with SSH keys)
     git clone git@github.com:Dipjyoti-Karmakar/coffee-sales-business-analytics.git
     ```
-2.  **Install Dependencies:**
+2.  **Set up the Environment:**
     ```bash
-    pip install pandas numpy matplotlib seaborn
+    # Create and activate virtual environment
+    python -m venv venv
+    source venv/Scripts/activate  # On Windows
+
+    # Install dependencies
+    pip install pandas numpy matplotlib seaborn jupyter
     ```
-3.  **Run the Notebook:**
-    Open `coffee_sales_analytics/coffee_sales_analytics.ipynb` in Jupyter Notebook or VS Code.
+3.  **Run the Analysis:**
+    Open `notebooks/eda/01_coffee_sales_analytics.ipynb` in Jupyter Notebook or VS Code. Ensure that `customer_details.csv` and `transactions.csv` are in the `data/raw/` directory.
 
 ## Author
 **Dipjyoti Karmakar**
